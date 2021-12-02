@@ -1,6 +1,7 @@
 package tapp.bottomnav.demo.util
 
 import android.view.LayoutInflater
+import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -19,3 +20,6 @@ fun Fragment.navigateUp() {
         findNavController().navigateUp()
     }
 }
+
+internal val ViewGroup.layoutInflater: LayoutInflater
+    get() = LayoutInflater.from(this.context)

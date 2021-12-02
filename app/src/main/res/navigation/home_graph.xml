@@ -23,5 +23,11 @@
         android:id="@+id/detailsFragment"
         android:name="tapp.bottomnav.demo.feature.DetailsFragment"
         android:label="DetailsFragment"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="articleId"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
 </navigation>
