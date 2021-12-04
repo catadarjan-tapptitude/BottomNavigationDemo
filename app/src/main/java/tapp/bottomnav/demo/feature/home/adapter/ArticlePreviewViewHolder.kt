@@ -1,10 +1,9 @@
-package tapp.bottomnav.demo.feature.adapter
+package tapp.bottomnav.demo.feature.home.adapter
 
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import java.text.SimpleDateFormat
-import java.util.Locale
 import tapp.bottomnav.demo.databinding.ItemArticlePreviewBinding
+import tapp.bottomnav.demo.util.loadUrl
+import tapp.bottomnav.demo.util.setFormattedDate
 
 class ArticlePreviewViewHolder(
     private val binding: ItemArticlePreviewBinding,
@@ -24,15 +23,8 @@ class ArticlePreviewViewHolder(
     fun bind(articlePreview: ArticlePreview) {
         this.articlePreview = articlePreview
         binding.articleTitleTV.text = articlePreview.title
-        binding.articleDateTV.text = SimpleDateFormat("dd-mm-yyyy", Locale.getDefault()).format(articlePreview.date)
+        binding.articleDateTV.setFormattedDate(articlePreview.date)
         binding.articleSnippetTV.text = articlePreview.contentPreview
-        loadArticleImage(articlePreview.imageUrl)
-    }
-
-    private fun loadArticleImage(imageUrl: String) {
-        Glide.with(binding.articleImageIV)
-            .load(imageUrl)
-            .centerInside()
-            .into(binding.articleImageIV)
+        binding.articleImageIV.loadUrl(articlePreview.imageUrl)
     }
 }

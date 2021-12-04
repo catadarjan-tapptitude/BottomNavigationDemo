@@ -1,7 +1,7 @@
 package tapp.bottomnav.demo.data
 
-import java.util.*
-import tapp.bottomnav.demo.feature.adapter.ArticlePreview
+import java.util.Date
+import tapp.bottomnav.demo.feature.home.adapter.ArticlePreview
 
 val articlePreviews = listOf(
     ArticlePreview(

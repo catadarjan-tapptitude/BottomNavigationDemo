@@ -1,4 +1,4 @@
-package tapp.bottomnav.demo.feature
+package tapp.bottomnav.demo.feature.home
 
 import android.os.Bundle
 import android.view.View
@@ -8,8 +8,7 @@ import com.zhuinden.fragmentviewbindingdelegatekt.viewBinding
 import tapp.bottomnav.demo.R
 import tapp.bottomnav.demo.data.articlePreviews
 import tapp.bottomnav.demo.databinding.FragmentHomeBinding
-import tapp.bottomnav.demo.feature.adapter.ArticlePreviewsAdapter
-import tapp.bottomnav.demo.util.navigateUp
+import tapp.bottomnav.demo.feature.home.adapter.ArticlePreviewsAdapter
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
@@ -18,12 +17,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initListeners()
         initViews()
-    }
-
-    private fun initListeners() {
-        binding.toolbar.setNavigationOnClickListener { navigateUp() }
     }
 
     private fun initViews() {

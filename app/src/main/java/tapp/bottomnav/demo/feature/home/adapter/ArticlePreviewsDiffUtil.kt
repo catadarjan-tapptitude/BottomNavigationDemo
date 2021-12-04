@@ -1,4 +1,4 @@
-package tapp.bottomnav.demo.feature.adapter
+package tapp.bottomnav.demo.feature.home.adapter
 
 import androidx.recyclerview.widget.DiffUtil
 

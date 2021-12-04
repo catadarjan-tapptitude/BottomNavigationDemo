@@ -35,6 +35,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     companion object {
-        private val BOTTOM_NAVIGATION_FRAGMENTS = listOf(R.id.homeFragment, R.id.profileFragment, R.id.newsFragment)
+        private val BOTTOM_NAVIGATION_FRAGMENTS = listOf(R.id.homeFragment, R.id.profileFragment, R.id.travelFragment)
     }
 }

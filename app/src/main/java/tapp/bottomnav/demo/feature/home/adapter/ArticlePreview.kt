@@ -1,6 +1,6 @@
-package tapp.bottomnav.demo.feature.adapter
+package tapp.bottomnav.demo.feature.home.adapter
 
-import java.util.*
+import java.util.Date
 
 data class ArticlePreview(
     val id: Int,

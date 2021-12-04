@@ -52,7 +52,7 @@
             android:layout_marginTop="12dp"
             android:ellipsize="end"
             android:lines="2"
-            android:text="@string/lecture_notes_short"
+            android:text="@string/lorem_ipsum_short"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -5,6 +5,6 @@
     app:startDestination="@id/home_graph">
 
     <include app:graph="@navigation/home_graph" />
-    <include app:graph="@navigation/news_graph" />
+    <include app:graph="@navigation/travel_graph" />
     <include app:graph="@navigation/profile_graph" />
 </navigation>
