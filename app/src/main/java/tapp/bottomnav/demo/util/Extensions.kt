@@ -39,7 +39,7 @@ fun ImageView.loadUrl(imageUrl: String) {
 }
 
 fun TextView.setFormattedDate(date: Date) {
-    text = SimpleDateFormat("dd-mm-yyyy", Locale.getDefault()).format(date)
+    text = SimpleDateFormat("dd-mm-yyyy", Locale.US).format(date)
 }
 
 fun List<ArticlePreview>.getArticleById(articleId: Int): ArticlePreview? = firstOrNull { article -> article.id == articleId }
